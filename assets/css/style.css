@@ -1,0 +1,755 @@
+
+:root {
+    /* Paleta Principal */
+    --cor-azul-escuro: #1A237E;    /* Azul Escuro - Logo, Navbar Scroll, Textos Principais */
+    --cor-amarelo: #FFD70F;        /* Amarelo - Botões, Ícones, Detalhes */
+    --cor-vermelho: #E63946;       /* Vermelho - Botões de Destaque */
+    --cor-cinza-claro: #F2F2F2;    /* Cinza Claro - Fundo das Seções */
+    --cor-azul-claro: #5FA8D3;     /* Azul Claro - Detalhes, Textos Secundários */
+    --cor-preto: #000000;          /* Preto - Textos Gerais, Ícones Pequenos */
+
+    /* Extras */
+    --cor-branco: #FFFFFF;         /* Branco - Fundo Principal, Textos em Botões Coloridos */
+}
+
+
+body {
+    background-color: #F2F2F2;
+}
+/* menu navabar */
+.btn-outline-success{
+    border:1px solid var(--cor-vermelho);
+    color: var(--cor-vermelho);
+}
+.btn-outline-success:hover,.btn-outline-success:active {
+    color: var(--cor-vermelho);
+    border:1px solid var(--cor-amarelo);
+    background-color: white;
+}
+.btn-outline-success:active,
+.btn-outline-success:focus,
+.btn-outline-success:focus:active  {
+    color: var(--cor-azul-escuro) !important;
+    border: 1px solid var(--cor-vermelho) !important;
+    background-color: var(--cor-branco) !important;
+}
+a.navbar-brand img.img-fluid {
+    width: 100%;
+    height: 55px;
+
+
+}
+
+nav.navbarn.avbar-expand-lg.navbar-light.bg-transparent.fixed-top.transition-navbar{
+        background-color: var(--cor-branco);
+        box-shadow: 0px 0px 1px 0px #000000;
+    }
+a.nav-link {
+    color: var(--cor-azul-escuro) !important;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Arial Black sans", sans-serif !important;
+
+}
+a.nav-link:hover {
+    background-color: #000 !important;
+    color:var(--cor-amarelo) !important;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+div.collapse.navbar-collapse{
+    text-align: center;
+}
+
+.transition-navbar {
+    background-color: var(--cor-branco);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+    .navbar.bg-transparent {
+        background-color: white !important; /* aqui seria o único caso aceitável de usar !important se quiser manter a classe */
+    }
+
+    /* Estado inicial */
+    .navbar.transition-navbar.bg-transparent {
+        background-color: white; /* Cor inicial da navbar */
+        transition: background-color 0.3s ease-in-out;
+        padding: 20px;
+    }
+
+    /* Quando scroll > 50px */
+    .navbar.navbar-scroll {
+        background-color: var(--cor-azul-escuro); /* Cor desejada ao rolar */
+        transition: background-color 0.3s ease-in-out;
+        padding: 20px;   }
+
+/* Quando a navbar estiver no estado de scroll */
+.navbar.navbar-scroll a.nav-link:hover {
+    color: var(--cor-vermelho) !important;           /* Cor do texto ao passar o mouse */
+    background-color: var(--cor-amarelo) !important; /* Cor de fundo ao passar o mouse */
+    border-radius: 10px;                             /* Arredondar o fundo */
+    transition: all 0.3s ease-in-out;                /* Efeito de transição suave */
+}
+
+    .navbar-scroll {
+    background-color:  #021526 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--cor-branco);
+}
+a.nav-link {
+    color: var(--cor-azul-escuro) !important;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Arial Black sans", sans-serif !important;
+    transition: color 0.5s ease;
+}
+
+/* Estilo padrão da navbar (sem scroll) */
+.navbar {
+    transition: all 0.3s ease;
+    background-color: transparent !important;
+}
+
+/* Estilo quando há scroll */
+.navbar.navbar-scroll {
+    background-color: var(--cor-preto) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Links normais */
+.navbar .nav-link {
+    color: var(--cor-azul-escuro) !important;
+    font-weight: 400;
+}
+
+/* Links com scroll */
+.navbar.navbar-scroll .nav-link {
+    color: var(--cor-branco) !important;
+
+}
+
+/* Botão Área Restrita - estado normal */
+.navbar .btn-outline-success {
+    border-color: var(--cor-vermelho);
+    color: var(--cor-vermelho);
+    background-color: transparent; /* Adicionado para garantir transparência */
+    transition: all 0.3s ease; /* Adicionado para suavizar a transição */
+}
+.navbar .btn-outline-success:hover {
+    border-color: var(--cor-amarelo);
+    color: var(--cor-azul-escuro);
+    background-color: transparent; /* Adicionado para garantir transparência */
+    transition: all 0.3s ease; /* Adicionado para suavizar a transição */
+}
+
+/* Botão com scroll */
+.navbar.navbar-scroll .btn-outline-success {
+    border-color: var(--cor-amarelo);
+    color: var(--cor-branco);
+    background-color: transparent; /* Sugestão para melhor contraste */
+}
+.navbar.navbar-scroll .btn-outline-success:hover {
+    border-color: var(--cor-branco);
+    color: var(--cor-amarelo);
+    background-color: transparent; /* Sugestão para melhor contraste */
+}
+
+    /* Logo padrão (navbar normal) */
+    .navbar-brand img {
+        transition: all 0.3s ease;
+        height: 40px; /* Ajuste conforme necessário */
+    }
+
+    /* Logo quando navbar está com scroll */
+    .navbar.navbar-scroll .navbar-brand img {
+        content: url('assets/img/logo_bemk_pequeno_branco.svg'); /* Nova imagem para scroll */
+        height: 30px; /* Opcional: ajuste de tamanho */
+    }
+
+/* topo 2*/
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+
+}
+
+.animacao-flutuante {
+    animation:  flutuar 5s  ease-in-out infinite;
+
+}
+h1.topo2text {
+    font-size: 3.063rem;
+
+    color: var(--cor-azul-escuro);
+    font-weight: bolder;
+}
+p.mb-3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+p.mb-4 {
+    color: #2F388A;
+    font-family: "Arial Black sans", sans-serif;
+    font-size: 1.1rem !important;
+}
+#texto {
+    color: var(--cor-vermelho);
+}
+#texto::after{
+    content: '|';
+    animation: blink 0.7s infinite;
+    color: #E63946 !important;
+    margin-left: 5px;
+}
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+.d-flex flex-column.flex-md-row.justify-content-lg-start.justify-content-md-center.justify-content-center.mb-3.p-4 {
+    display:inline-block;
+    justify-content: space-between;
+}
+a.btn.btn-lg.btn-solucaoDigitais.me-0.me-md-3.mb-3.mb-md-0{
+    border: 0.125rem solid #000 !important;
+    font-size: 0.938rem;
+    font-weight: 600;
+    text-align: left;
+    width: 18.75rem;
+    height: 2.875rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:  var(--cor-vermelho);
+    color: var(--cor-branco);
+}
+a.btn.btn-lg.btn-solucaoDigitais.me-0.me-md-3.mb-3.mb-md-0:hover{
+    border: 2px solid var(--cor-amarelo) !important;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+
+}
+a.btn.btn-lg.btn-especialista.me-0.me-md-3.mb-3.mb-md-0{
+    border: 0.125rem solid var(--cor-preto) !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    width: 18.75rem;
+    height: 2.875rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:  var(--cor-amarelo);
+    color: var(--cor-preto);
+}
+a.btn.btn-lg.btn-especialista.me-0.me-md-3.mb-3.mb-md-0:hover{
+    border:  0.125rem solid var(--cor-amarelo) !important;
+    background-color: var(--cor-preto) !important;
+    color: var(--cor-branco);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+
+}
+/* CRIAÇÃO DE SITE */
+div.container-fluid.criacao {
+    background-color: var(--cor-branco);
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+}
+div.container-fluid.criacao{
+    border-radius:17%;
+    height: auto;
+    padding: 10px;
+}
+.row.m-4{
+    padding: 55px;
+}
+h5.destaque-azul {
+    color: var(--cor-azul-escuro);
+    padding: 2px;
+}
+p.mb-3.text-red {
+    color: var(--cor-vermelho);
+}
+h2.topo2text {
+    font-size: 4.063rem;
+
+    color: var(--cor-azul-escuro);
+    font-weight: bolder;
+}
+a.btn.btn-lg.btn-criacao.me-0.me-md-3.mb-3.mb-md-0{
+    border: 0.125rem solid #000 !important;
+    font-size: 0.938rem;
+    font-weight: 600;
+    text-align: left;
+    width: 11.75rem;
+    height: 2.875rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:  var(--cor-vermelho);
+    color: var(--cor-branco);
+}
+a.btn.btn-lg.btn-criacao.me-0.me-md-3.mb-3.mb-md-0:hover{
+    border: 2px solid var(--cor-amarelo) !important;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+
+}
+a.btn.btn-lg.btn-profissional.me-0.me-md-3.mb-3.mb-md-0{
+    border: 0.125rem solid var(--cor-preto) !important;
+    font-size: 0.938rem;
+    font-weight: 600;
+    text-align: left;
+    width: 11.75rem;
+    height: 2.875rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:  var(--cor-amarelo);
+    color: var(--cor-preto);
+}
+a.btn.btn-lg.btn-profissional.me-0.me-md-3.mb-3.mb-md-0:hover{
+    border:  0.125rem solid var(--cor-amarelo) !important;
+    background-color: var(--cor-preto) !important;
+    color: var(--cor-branco);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+
+}
+/* Marketing Digital e Redes Sociais  */
+h6.topo2text{
+    font-size: 2.68rem;
+    color: var(--cor-azul-escuro);
+}
+p.mb-2.mk-text01{
+    color: var(--cor-vermelho);
+    font-size: 24px;
+    font-weight: 500;
+}
+p.mb-2.mk-text02 {
+    color: var(--cor-azul-escuro);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+p.mb-4.mk-text03 {
+    padding: 5px;
+}
+.text-escuro {
+    font-weight: 600;
+    color: var(--cor-azul-escuro);
+}
+p.mb-4.text-red{
+    color: var(--cor-vermelho);
+    font-weight: 600;
+}
+/*  servicos */
+div.container-fluid.p-4.mb-md-4.servicos{
+    background-color: var(--cor-branco);
+    border-radius:5%;
+}
+h2.titulo-servico.destaque-azul{
+    color: var(--cor-azul-escuro);
+    font-weight: bolder;
+    font-size: 45px;
+}
+img.text-center.img-servico {
+    width: 160px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+}
+div.card{
+    border: 2px solid #000;
+    border-radius: 16px;
+    background-color: var(--cor-branco);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+div.row.p-4.text-center{
+    margin-bottom: -28px;
+}
+div.card:hover {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+}
+div.container.area-serviço {
+    padding: 44px;
+    margin: 88px
+}
+.cliente-img {
+    max-width: 180px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.cliente-img:hover {
+    transform: translateY(-10px); /* Sobe 10px */
+}
+
+div.card.clientes{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--cor-preto);
+    background-color: var(--cor-branco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0,0,0,.1);
+    overflow: hidden;
+
+}
+/* DEPOIMENTO DE CLIENTE */
+. destaque-amarelo {
+    color: var(--cor-amarelo);
+}
+div.container-fluid.p-4.mb-md-4.depoimentos{
+    background-color: var(--cor-branco);
+    border-radius:5%;
+}
+img.img-fluid.depoimento {
+    width: 272px;
+    height: 57px;
+    padding: 4px;
+}
+i.bi.bi-star-fill.destaque-amarelo{
+    color: var(--cor-amarelo);
+}
+.swiper {
+    background: transparent;
+    padding: 1rem 0;
+    width: 100%;
+    padding: 15px;
+
+}
+
+
+/* Estilo base para os botões de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--cor-amarelo);
+    width: 30px;
+    height: 30px;
+    background-color: var(--cor-branco);
+    padding: 5px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Transição suave para hover */
+}
+
+/* Estilo para os ícones dentro dos botões */
+.swiper-button-prev i,
+.swiper-button-next i {
+    transition: all 0.3s ease; /* Transição para os ícones */
+}
+
+/* Efeito hover - aplicado ao botão inteiro */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito hover específico para os ícones */
+.swiper-button-prev:hover i,
+.swiper-button-next:hover i {
+    color: var(--cor-azul-claro);
+    padding: 5px; /* Ajuste menor que 10px para manter a proporção */
+}
+div.card.border-0.swiper-card{
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    min-height: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 30px;
+}
+div.card.border-0.swiper-card:hover {
+     background-color: var(--cor-branco);
+    color: var(--cor-preto);
+    transition: all 1s;
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 2px 0px var(--cor-azul-escuro);
+}
+.row.text-center.swiper-row{
+    margin-top: 60px;
+}
+i.fas fa-chevron-left {
+    color: var(--cor-azul-escuro);
+}
+
+/* Remover ícones padrão do Swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+p.text-center.swiper-p {
+    text-align: center;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    padding: 5px;
+}
+p.text-center.fw-bold.cli{
+    color: #1A237E;
+}
+/*  Um Pouco Sobre Nós  */
+div.row.sobreNos {
+    margin-top: 100px;
+    font-size: 18px;
+    text-align: left;
+
+}
+.rede-sociais a i {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: var(--cor-azul-escuro) !important;
+    background-color: #f1f1f1;
+    color: #333;
+    transition: 0.3s;
+}
+
+.rede-sociais a i:hover {
+    background-color: var(--cor-amarelo) !important;
+    color: var(--cor-vermelho) !important;
+    border: solid var(--cor-vermelho) !important;
+
+}
+div.rede.social.d-flex.gap-3.p-4{
+    margin: auto;
+    justify-content: center;
+}
+.social_text_amarelo:hover {
+    color: var(--cor-amarelo);
+}
+.rede a i {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: var(--cor-azul-escuro) !important;
+    background-color: #f1f1f1;
+
+    transition: 0.3s;
+    margin: auto;
+    justify-content: center;
+}
+
+.rede a i:hover {
+    background-color: var(--cor-amarelo) !important;
+    color: var(--cor-vermelho) !important;
+    border: solid var(--cor-vermelho) !important;
+}
+
+.btn-social-icon{
+border: solid var(--cor-preto);
+height: 60px;
+width: 60px;
+padding: 10px 10px;
+font-size: 25px;
+}
+
+/* container esperando p-4 mb-4  */
+.container-fluid.esperando {
+    background-color: #EBF0FF;
+    border-radius: 121px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 40px;
+    padding-top: 62px;
+}
+h3.titulo-esperando.destaque-azul{
+    color: var(--cor-azul-escuro);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    bottom: 0;
+    margin-bottom: -20px;
+
+}
+
+p.titulo-esperando.destaque-azul{
+    color: var(--cor-azul-escuro);
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-bottom: -28px;
+}
+p.titulo-esperando-claro.destaque-azul.text-center.p-4{
+    color: var(--cor-azul-escuro);
+    font: italic 18px  sans-serif;
+    margin-top: 15px;
+}
+
+h3.titulo-esperando.destaque-azul{
+    color: var(--cor-azul-escuro);
+}
+/*#021526*/
+a.btn.btn-lg.btn-esperando.me-0.me-md-3.mb-3.mb-md-0{
+    background-color:#021526 ;
+    color: var(--cor-branco);
+    font-size: 1.2rem;
+
+}
+/* novidade */
+div.row.g-3.p-4.row-novidades{
+    justify-content: center;
+}
+div.container-fluid.novidade.p-4.mb-4{
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    background-color: #FFC220;
+    padding: 10px;
+
+}
+a.btn.btn-lg.btn-inscreva.me-0.me-md-3.mb-3.mb-md-0{
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    /* rgba(255, 0, 0, 0.3) → vermelho com 30% de opacidade */
+
+}
+a.btn.btn-lg.btn-inscreva.me-0.me-md-3.mb-3.mb-md-0:hover{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+
+/* footer */
+footer.container-fluid.bg-dark.text-secondary.text.p-5{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: -76px;
+    background-color: #021526;
+}
+i.bi.bi-telephone{
+    color: var(--cor-branco);
+}
+input.form-control{
+    height: 100%;
+    min-height: 60px;
+    width: 100%;
+    max-width: 350px;
+    justify-content: space-between;
+    margin-right: 14px;
+}
+a.text-white.info {
+    text-decoration: none !important;
+    margin-top: 10px;
+}
+.form-group{
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+div.rede.social.d-flex.gap-3{
+    padding: 20px;
+    margin: auto;
+    justify-content: center;
+}
+@media (max-width: 760px) {
+    .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+    }
+}
+/*  REDE SOCIAIS LATERAL */
+/* Estilo para as redes sociais em coluna */
+.floating-icons{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    
+
+}
+.floating-icons i.bi.bi-whatsapp,
+.floating-icons i.bi.bi-facebook,
+.floating-icons i.bi.bi-instagram,
+.floating-icons i.bi.bi-linkedin
+{
+    background-color: var(--cor-amarelo);
+    color: var(--cor-azul-escuro);
+    padding: 20px;
+    border-radius: 50%;
+    width:70px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+
+
+/* ============ MEDIA QUERIES ============ */
+@media (min-width: 768px) {
+    /* Ajustes para tablet */
+    .topo2text {
+        font-size: 4.063rem;
+    }
+
+    .mb-3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-container {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .btn-solucaoDigitais,
+    .btn-especialista {
+        width: 18.75rem;
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Ajustes para navbar mobile */
+    .navbar-collapse {
+        background-color: var(--cor-branco);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-scroll .navbar-collapse {
+
+    }
+
+    .nav-link {
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        border-color: var(--cor-vermelho);
+        color:var(--cor-branco);
+        background-color: var(--cor-amarelo);
+    }
+}

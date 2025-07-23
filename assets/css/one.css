@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+input.form-control {
+    height: 55px;
+
+}
+input.form-control:focus,nput.form-control:active {
+    border: 4px dashed #ffd70f;
+    box-shadow: none;
+}
+.img-lateral {
+    background-color: #c9d2e02e;
+    background-image: url(../img/fundo_login.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    box-shadow: inset 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+div.col-12.col-md-4.p-4.login{
+    margin-top: 150px;
+
+
+}
+
+div.col-12.col-md-4.p-4.login p {
+    margin-top: 20px;
+}
+div.col-12.col-md-4.p-4.login h2 {
+    margin-top: 20px;
+}
+img.img-fluid {
+    display: flex;
+    max-width: 200px;
+    margin: auto;
+    justify-content: center;
+}
+.form-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+a.btn.btn-primary.form-control{
+    background-color: #1A346F;
+    color: #ffd70f;
+    font-weight: 500;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 0;
+}
+
+a.btn.btn-primary.form-control:hover{
+    background-color:#ffd70f;
+    color: #1A346F;
+    border: 0;
+}
+a.text-center.text-esquece-senha{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #1A346F;
+    text-decoration: none;
+}
+h1.modal-title.fs-5{
+    color: #1d3671;
+}
+div.modal-header {
+    color: #fff;
+    text-align: left;
+    background-color: #c9d2e0;
+}
+div.modal-body {
+    margin-bottom: 0;
+}
+a.btn.btn-green {
+    background-color: #157347;
+    color: #fff;
+    height: 46px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* para centralizar verticalmente o texto */
+    margin: 0; /* remove auto que centraliza */
+}
+
+button.btn.btn-green {
+    background-color: #157347;
+    color: #fff;
+    height: 46px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: inset 0 6px 6px rgba(0, 0, 0, 0.3);
+}

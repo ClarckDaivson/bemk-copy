@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/one.css">
+
+
+    <title>BEMK ONE - LOGIN</title>
+
+
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-12 col-md-4 p-4 login">
+          <img src="assets/img/logo_bemk_one.svg" class="img-fluid">
+          <h2 class="text-center">Bem-vindo</h2>
+          <p class="text-center">Para ter acesso ao sistema, informe abaixo os dados de acesso.</p>
+         <form method="post">
+             <div class="form-group">
+                 <input type="text" class="form-control" name="nome" id="nome" title="Nome do Usuário" placeholder="Nome do Usuário">
+             </div>
+             <div class="form-group">
+                 <input type="password" class="form-control" name="senha" id="senha" title="Senha" placeholder="Senha">
+             </div>
+         </form>
+
+          <a href="#" class="btn btn-primary form-control">Entrar</a>
+          <a href="#" class="text-center text-esquece-senha"data-bs-toggle="modal" data-bs-target="#exampleModal">Esquece a senha? Clique aqui!</a>
+      </div>
+      <div class="col-12 col-md-8 img-lateral">
+
+      </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Esqueci minha senha</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-left">
+                <p>Por favor, informe abaixo o usuário cadastrado no sistema, para que possamos enviar uma nova senha de acesso!</p>
+                <form method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="nome-recuperar-senha" id="nome-recuperar-senha" title="Nome do Usuário" placeholder="Nome do Usuário">
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="modal-footer border-0">
+
+                <button type="submit" class="btn btn-green ">Solicitar nova senha</button>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<!-- Coloque o jQuery antes do Bootstrap JS -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>
