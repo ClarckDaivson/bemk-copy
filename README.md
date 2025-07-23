@@ -7,8 +7,10 @@
 
 > 🚧 **Atenção:** Este site ainda está em desenvolvimento e manutenção.  
 > Algumas seções estão incompletas e não há prazo definido para conclusão total do projeto.
-> > 🛑 **Aviso Legal:** Este projeto é exclusivamente para fins de estudo e prática em front-end.  
-> O layout utilizado é baseado na identidade visual da empresa **Bemk** e **não está disponível para comercialização ou uso oficial**.
+🛑 Aviso Legal: Este projeto é destinado exclusivamente para fins de estudo e prática em desenvolvimento front-end.
+O layout, imagens e informações utilizadas foram baseados na identidade visual da empresa Bemk, com o objetivo de simular um ambiente real de desenvolvimento para fins educacionais.
+Este projeto não possui qualquer vínculo oficial com a empresa Bemk, não utiliza dados reais de clientes e não está disponível para comercialização ou uso profissional.
+Todos os direitos sobre a marca, logotipo e identidade visual pertencem à empresa original.
 
 ---
 
@@ -78,7 +80,7 @@ Este projeto tem como finalidade o estudo e prática de desenvolvimento front-en
 
 ## 🙌 Agradecimentos
 
-- 🎯 Inspiração: [Bemk]([https://arius.com.br](https://bemktech.com.br/))
+- 🎯 Inspiração: [Bemk]([https://arius.com.br](https://bemktech.com.br))
 - 🎨 Ícones: [Font Awesome](https://fontawesome.com)
 - 🧩 Framework: [Bootstrap 5](https://getbootstrap.com)
 
