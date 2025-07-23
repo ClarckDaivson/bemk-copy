@@ -18,7 +18,7 @@
 
 -> Pagina Home - One
 ![Bemk Home](https://github.com/ClarckDaivson/bemk-copy/blob/main/assets/img/bemk.png)
-![Bemk one]([./assets/img/sobre.png](https://github.com/ClarckDaivson/bemk-copy/blob/main/assets/img/one.png)
+![Bemk one](https://github.com/ClarckDaivson/bemk-copy/blob/main/assets/img/one.png)
 
 
 ---
